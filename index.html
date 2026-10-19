@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6b5cff" />
+  <title>CHAOS JUMP 3D — Hengky Studio</title>
+</head>
+<body>
+  <div id="app">
+    <div id="hud">
+      <div class="brand"><span class="brand-icon">✦</span><div><b>CHAOS JUMP <em>3D</em></b><small>HENGKY STUDIO</small></div></div>
+      <div class="hud-right">
+        <div class="pill"><span class="dot"></span><span id="connection">Menghubungkan...</span></div>
+        <div class="pill">👥 <span id="players">1</span></div>
+        <div class="pill">⏱ <span id="timer">00:00</span></div>
+      </div>
+      <div class="race-card"><small>POSISI KAMU</small><strong id="position">—</strong><div id="progress-label">Capai garis finis!</div><div class="progress"><span id="progress-bar"></span></div></div>
+      <div class="hint-card"><b>🎮 KONTROL</b><span>W A S D <i>Bergerak</i></span><span>SPACE <i>Lompat</i></span><span>SHIFT <i>Sprint</i></span><span>MOUSE <i>Kamera</i></span></div>
+    </div>
+    <div id="crosshair">+</div>
+    <div id="toast"></div>
+    <div id="overlay" class="overlay">
+      <div class="modal">
+        <div class="eyebrow">HENGKY STUDIO PRESENTS</div>
+        <div class="logo-title">CHAOS<br><span>JUMP 3D</span></div>
+        <p class="tagline">Lompat. Hindari. Jadilah yang terakhir berdiri.</p>
+        <label for="nickname">NAMA PEMAIN</label>
+        <input id="nickname" maxlength="16" placeholder="Masukkan nama..." value="Player" />
+        <button id="play-btn">MASUK ARENA <span>→</span></button>
+        <div class="modal-foot"><span>🌈 3D PARTY PLATFORMER</span><span>🌐 MULTIPLAYER ONLINE</span></div>
+        <p class="small-note">Tip: gunakan WASD, Space, dan mouse. Multiplayer memerlukan server aktif.</p>
+      </div>
+    </div>
+    <div id="end-overlay" class="overlay hidden">
+      <div class="modal result-modal"><div id="result-emoji" class="result-emoji">🏆</div><div id="result-title" class="result-title">KAMU MENANG!</div><p id="result-text">Sampai jumpa di arena berikutnya.</p><button id="again-btn">MAIN LAGI ↻</button></div>
+    </div>
+    <div id="bottom-hint">CHAOS JUMP 3D <span>•</span> Arena Awan Pelangi</div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
